@@ -1,5 +1,5 @@
 import React from 'react';
-import "./index.scss";
+import "../index.scss";
 
 const About = () => 
     <div className="card m-5 p-3">

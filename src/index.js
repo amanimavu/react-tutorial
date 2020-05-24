@@ -6,11 +6,14 @@ import 'jquery';
 import 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import {HomePageDisplay, NavigationBar} from "./home";
-import About from "./about";
-import Buy from "./buy_car";
-import Hire from "./hire_car";
-import Sell from "./sell_car"
+import HomePage from "./pages/home";
+import LocationPage from "./pages/locations";
+import AboutPage from "./pages/about";
+import BuyPage from "./pages/buy_car";
+import HirePage from "./pages/hire_car";
+import SellPage from "./pages/sell_car";
+
+import NavigationBar from './components/NavigationBar';
 
 import { HashRouter, Switch, Route } from 'react-router-dom';
 
@@ -19,11 +22,12 @@ function App(){
         <div>
             <NavigationBar/>
             <div className="content">
-                <Route path="/" component={HomePageDisplay} exact={true}/>
-                <Route path="/buy" component={Buy} />
-                <Route path="/sell" component={Sell} />
-                <Route path="/hire" component={Hire} />
-                <Route path="/about" component={About} />
+                <Route path="/" component={HomePage} exact={true}/>
+                <Route path="/buy" component={BuyPage}/>
+                <Route path="/sell" component={SellPage}/>
+                <Route path="/hire" component={HirePage}/>
+                <Route path="/about" component={AboutPage}/>
+                <Route path="/locations" component={LocationPage}/>
             </div>
         </div>
     )

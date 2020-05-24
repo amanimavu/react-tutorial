@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import "./index.scss";
+import "../index.scss";
 import Datepicker from 'react-datepicker'; 
 import 'react-datepicker/dist/react-datepicker.css';
-import {hire_cars} from "./information";
+import {hire_cars} from "../information";
 
 function Dates(props){
     const [selectedDate, setSelectedDate] = useState(null)

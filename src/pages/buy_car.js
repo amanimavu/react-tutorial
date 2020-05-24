@@ -1,6 +1,6 @@
 import React from 'react';
-import "./index.scss";
-import { car_info } from './information';
+import "../index.scss";
+import { car_info } from '../information';
 
 const Find = () => 
     <div className="card buy-search-tabs m-5 border">
