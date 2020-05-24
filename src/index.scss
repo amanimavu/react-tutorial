@@ -1,0 +1,50 @@
+@import "~bootstrap/scss/bootstrap";
+.background {
+    background-image: url("https://www.jamesedition.com/stories/wp-content/uploads/2018/02/8f35ba26fe296e36b3a96ee5416259b4.jpg");
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    background-size: cover;
+}
+
+.fixed-bottom{
+    font-weight: bold;
+    color: beige;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 120px;
+    font-family: 'Courgette', sans-serif;
+}
+
+.buy-search-tabs{
+    width: 420px;
+}
+
+.table {
+    width: 40%;
+    margin:0;
+}
+
+.ml-3::before{
+    background-color: blue;
+    content: "";
+    width: 50px;
+    height: 50px;
+}
+
+.input-group{
+    width: 390px;
+}
+
+.btn-primary{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.cars{
+    margin-left: 200px;
+}
+
